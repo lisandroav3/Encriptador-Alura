@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/styles.css">
+        <title>Encriptador de Texto</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap');
+            </style>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <section class="container">
+            <div class="logo">
+                <img class="logoimg" src="/Imagenes/Vector.png" alt="Logo de Alura">
+                <h1 class="tittle">Encriptador de texto</h1>
+            </div>
+
+            <div class="left">
+                <input id= "input-texto" class="text-input" type="textarea" placeholder="Ingrese el texto aquí">
+            </div>
+            
+            <div class="right">
+                <img id= "imagen-derecha" src="/Imagenes/Muñeco.png" alt="Imagen de un joven">
+                <h3 id="texto">Ningún mensaje fue encontrado</h3>
+                <textarea id= "texto2" name="name" rows="8" cols="80">ingrese el texto que desees encriptar o desencriptar.</textarea>
+                <button id="copy" type="button" name="button" onclick="copy()">Copiar</button>
+            </div>
+
+            <div class="button">
+                <p>Solo minúsculas y sin acentos</p>
+                <button type="button" id="button-encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="button" id="button-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+
+        </section>
+    </body>
+</html>
